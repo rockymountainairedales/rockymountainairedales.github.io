@@ -54,9 +54,7 @@ h2{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size
 .card p{margin:0;color:var(--muted)}
 .gallery{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:150px;gap:14px}
 .gallery .ph{border-radius:6px}
-.gallery .a{grid-column:span 3;grid-row:span 3}
-.gallery .b{grid-column:span 3;grid-row:span 2}
-.gallery .c{grid-column:span 3;grid-row:span 1}
+.gallery .a,.gallery .b,.gallery .c{grid-column:span 2;grid-row:span 3}
 .gallery .d,.gallery .e,.gallery .f{grid-column:span 2;grid-row:span 2}
 .puppies{background:var(--spruce);color:var(--stone)}
 .puppies .kicker{color:var(--tan)}
@@ -84,7 +82,7 @@ ol.steps span{color:rgba(242,241,235,.8)}
 .contact-side b{color:var(--ink)}
 footer{background:var(--spruce);color:rgba(242,241,235,.8);padding:30px 0;font-size:.92rem}
 footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
-@media (max-width:900px){.hero{grid-template-columns:1fr;padding-top:12px}.hero-photo{order:2;aspect-ratio:4/3.4;min-height:0}.cta-row{padding-bottom:36px}.facts ul{grid-template-columns:1fr 1fr}.cards,.pup-grid,.story,.contact-box{grid-template-columns:1fr}.contact-box,.story,.pup-grid{gap:32px}.gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px}.gallery .a,.gallery .b,.gallery .c,.gallery .d,.gallery .e,.gallery .f{grid-column:span 1;grid-row:span 1}.gallery .a{grid-column:span 2;grid-row:span 2}section{padding:64px 0}}
+@media (max-width:900px){.hero{grid-template-columns:1fr;padding-top:12px}.hero-photo{order:2;aspect-ratio:4/3.4;min-height:0}.cta-row{padding-bottom:36px}.facts ul{grid-template-columns:1fr 1fr}.cards,.pup-grid,.story,.contact-box{grid-template-columns:1fr}.contact-box,.story,.pup-grid{gap:32px}.gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px}.gallery .a,.gallery .b,.gallery .c,.gallery .d,.gallery .e,.gallery .f{grid-column:span 1;grid-row:span 1}.gallery .a{grid-column:span 2;grid-row:span 2}.gallery .b,.gallery .c{grid-row:span 2}section{padding:64px 0}}
 @media (max-width:600px){nav a.link{display:none}header{padding:14px 0;gap:12px}.brand{font-size:1.05rem;line-height:1.05}nav{gap:0}nav .btn.small{padding:9px 16px;font-size:.85rem;font-weight:700;letter-spacing:.01em;white-space:nowrap;box-shadow:0 0 0 3px rgba(219,163,83,.28),0 4px 12px rgba(0,0,0,.28)}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
 </style>
@@ -145,9 +143,9 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
     <p class="intro">Adults and puppies from our kennel in Pocatello.</p>
     <div class="gallery">
       <div class="ph a"><img src="IMG_3508.JPEG" alt="Airedale Terrier lying on an ottoman at home" style="object-position:50% 25%" loading="lazy"></div>
-      <div class="ph b"><img src="images/gallery-2.jpg" alt="Airedale puppy standing on a colorful rug" loading="lazy"></div>
-      <div class="ph c"><img src="20220612_164131.JPEG" alt="Black Airedale sitting on the lawn in front of a flower bed" loading="lazy" style="object-position:50% 37%"></div>
-      <div class="ph d"><img src="images/gallery-4.jpg" alt="Adult Airedale Terrier curled up on a patterned rug" loading="lazy"></div>
+      <div class="ph b"><img src="images/gallery-4.jpg" alt="Adult saddle-coat Airedale Terrier curled up on a patterned rug" loading="lazy" style="object-position:50% 40%"></div>
+      <div class="ph c"><img src="20220612_164131.JPEG" alt="Black Airedale sitting on the lawn in front of a flower bed" loading="lazy" style="object-position:85% 45%"></div>
+      <div class="ph d"><img src="images/gallery-2.jpg" alt="Black and tan Airedale puppy standing on a colorful rug" loading="lazy"></div>
       <div class="ph e"><img src="images/gallery-5.jpg" alt="Airedale puppy with one paw raised" loading="lazy"></div>
       <div class="ph f"><img src="images/gallery-6.jpg" alt="Adult Airedale Terrier lying in the grass" style="object-position:50% 65%" loading="lazy"></div>
     </div>
