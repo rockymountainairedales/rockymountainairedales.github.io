@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rocky Mountain Airedales</title>
+<meta name="description" content="Hypoallergenic, DNA-tested Airedale Terriers from Gary and Lori Bennion in Pocatello, Idaho. Family dogs for the Rocky Mountain area.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--spruce:#1d322c;--spruce-2:#2a4a40;--stone:#f2f1eb;--paper:#fbfaf6;--ink:#17201c;--muted:#55625b;--tan:#dba353;--tan-ink:#8a5614;--line:#d9d8cf;--display:"Big Shoulders Display","Arial Narrow",Impact,sans-serif;--body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;color-scheme:light}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--stone);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.6}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--tan);outline-offset:3px}
+.wrap{width:min(1160px,100% - 40px);margin-inline:auto}
+.top{background:repeating-radial-gradient(ellipse at 78% 45%,transparent 0 26px,rgba(255,255,255,.055) 26px 27px),var(--spruce);color:var(--stone)}
+header{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:22px 0}
+.brand{font-family:var(--display);font-weight:800;font-size:1.5rem;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;line-height:1}
+.brand span{color:var(--tan)}
+nav{display:flex;align-items:center;gap:28px}
+nav a.link{text-decoration:none;font-weight:500;font-size:.95rem;opacity:.9}
+nav a.link:hover{opacity:1;text-decoration:underline;text-underline-offset:6px}
+.btn{display:inline-block;text-decoration:none;font-weight:600;font-size:1rem;padding:14px 26px;border-radius:999px;border:2px solid var(--tan);background:var(--tan);color:var(--spruce);transition:transform .15s ease,background .15s ease}
+.btn:hover{transform:translateY(-2px);background:#ecb868}
+.btn.ghost{background:transparent;color:var(--stone);border-color:rgba(242,241,235,.55)}
+.btn.ghost:hover{background:rgba(242,241,235,.1)}
+.btn.small{padding:10px 20px;font-size:.92rem}
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:end;padding:28px 0 0}
+.eyebrow{font-weight:600;font-size:.85rem;letter-spacing:.16em;text-transform:uppercase;color:var(--tan);margin:0 0 18px}
+h1{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size:clamp(3.4rem,9.5vw,7.4rem);line-height:.9;letter-spacing:.005em;margin:0 0 24px;text-wrap:balance}
+h1 em{font-style:normal;color:var(--tan)}
+.hero p.lede{font-size:1.2rem;max-width:34ch;margin:0 0 32px;color:rgba(242,241,235,.88)}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px;padding-bottom:56px}
+.ph{position:relative;display:flex;align-items:flex-end;justify-content:flex-start;background:linear-gradient(135deg,rgba(0,0,0,0) 0 50%,rgba(0,0,0,.28) 50% 100%),linear-gradient(160deg,#c99552 0%,#a96f33 45%,#3a2b1f 100%);color:#fff;overflow:hidden}
+.ph::before{content:"";position:absolute;inset:0;opacity:.35;background:repeating-linear-gradient(115deg,transparent 0 14px,rgba(255,255,255,.12) 14px 15px)}
+.ph span{position:relative;margin:14px;padding:6px 12px;border-radius:999px;background:rgba(23,32,28,.78);font-size:.78rem;font-weight:600;letter-spacing:.04em}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero-photo{aspect-ratio:4/4.6;min-height:340px;clip-path:polygon(0 16%,12% 7%,24% 15%,40% 0,55% 12%,70% 3%,86% 14%,100% 6%,100% 100%,0 100%)}
+.facts{background:var(--tan);color:var(--spruce)}
+.facts ul{list-style:none;margin:0;padding:20px 0;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.facts li{font-family:var(--display);font-weight:800;font-size:clamp(1.15rem,2.4vw,1.6rem);text-transform:uppercase;letter-spacing:.04em;line-height:1.1}
+.facts li small{display:block;font-family:var(--body);font-weight:500;font-size:.82rem;letter-spacing:0;text-transform:none;opacity:.85;margin-top:4px}
+section{padding:88px 0}
+.kicker{font-weight:600;font-size:.82rem;letter-spacing:.16em;text-transform:uppercase;color:var(--tan-ink);margin:0 0 12px}
+h2{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size:clamp(2.3rem,5.2vw,3.8rem);line-height:.95;margin:0 0 20px;text-wrap:balance}
+.intro{max-width:58ch;color:var(--muted);font-size:1.1rem;margin:0 0 44px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:30px 28px 32px;border-top:6px solid var(--spruce)}
+.card h3{font-family:var(--display);font-weight:800;font-size:1.7rem;text-transform:uppercase;line-height:1;margin:0 0 12px}
+.card p{margin:0;color:var(--muted)}
+.gallery{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:150px;gap:14px}
+.gallery .ph{border-radius:6px}
+.gallery .a{grid-column:span 3;grid-row:span 3}
+.gallery .b{grid-column:span 3;grid-row:span 2}
+.gallery .c{grid-column:span 3;grid-row:span 1}
+.gallery .d,.gallery .e,.gallery .f{grid-column:span 2;grid-row:span 2}
+.puppies{background:var(--spruce);color:var(--stone)}
+.puppies .kicker{color:var(--tan)}
+.puppies .intro{color:rgba(242,241,235,.8)}
+.pup-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.status{border:2px solid var(--tan);border-radius:6px;padding:28px}
+.status h3{font-family:var(--display);font-weight:800;font-size:1.8rem;text-transform:uppercase;margin:0 0 8px;color:var(--tan);line-height:1}
+.status p{margin:0 0 22px}
+ol.steps{list-style:none;margin:0;padding:0;counter-reset:s;display:grid;gap:22px}
+ol.steps li{counter-increment:s;display:grid;grid-template-columns:54px 1fr;gap:16px;align-items:start}
+ol.steps li::before{content:counter(s);font-family:var(--display);font-weight:900;font-size:2.6rem;line-height:.9;color:var(--tan)}
+ol.steps b{display:block;font-family:var(--display);font-size:1.35rem;text-transform:uppercase;letter-spacing:.03em}
+ol.steps span{color:rgba(242,241,235,.8)}
+.story{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+.story .ph{aspect-ratio:4/4.4;border-radius:6px}
+.story p{margin:0 0 18px;max-width:54ch}
+.story p.big{font-size:1.3rem;line-height:1.45;color:var(--ink)}
+.contact{background:var(--paper);border-top:1px solid var(--line);text-align:left}
+.contact-box{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center}
+.email-line{font-family:var(--display);font-weight:800;font-size:clamp(1.5rem,4.6vw,2.8rem);line-height:1.05;word-break:break-word;margin:0 0 24px}
+.email-line a{text-decoration-color:var(--tan);text-decoration-thickness:4px;text-underline-offset:6px}
+.contact .btn{background:var(--spruce);border-color:var(--spruce);color:var(--stone)}
+.contact .btn:hover{background:var(--spruce-2)}
+.contact-side{border-left:4px solid var(--tan);padding-left:24px;color:var(--muted)}
+.contact-side b{color:var(--ink)}
+footer{background:var(--spruce);color:rgba(242,241,235,.8);padding:30px 0;font-size:.92rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+@media (max-width:900px){.hero{grid-template-columns:1fr;padding-top:12px}.hero-photo{order:2;aspect-ratio:4/3.4;min-height:0}.cta-row{padding-bottom:36px}.facts ul{grid-template-columns:1fr 1fr}.cards,.pup-grid,.story,.contact-box{grid-template-columns:1fr}.contact-box,.story,.pup-grid{gap:32px}.gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px}.gallery .a,.gallery .b,.gallery .c,.gallery .d,.gallery .e,.gallery .f{grid-column:span 1;grid-row:span 1}.gallery .a{grid-column:span 2;grid-row:span 2}section{padding:64px 0}}
+@media (max-width:600px){nav a.link{display:none}header{padding:16px 0}.brand{font-size:1.2rem}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+<div class="top">
+  <div class="wrap">
+    <header>
+      <a class="brand" href="#top">Rocky Mountain <span>Airedales</span></a>
+      <nav aria-label="Main">
+        <a class="link" href="#breed">The Breed</a>
+        <a class="link" href="#dogs">Our Dogs</a>
+        <a class="link" href="#puppies">Puppies</a>
+        <a class="link" href="#story">Our Story</a>
+        <a class="btn small" href="#contact">I'm Interested</a>
+      </nav>
+    </header>
+    <div class="hero" id="top">
+      <div>
+        <p class="eyebrow">Pocatello, Idaho</p>
+        <h1>Family dogs, raised in the <em>Rockies</em></h1>
+        <p class="lede">Hypoallergenic, DNA-tested Airedale Terriers from Gary and Lori Bennion.</p>
+        <div class="cta-row">
+          <a class="btn" href="#contact">Join the puppy list</a>
+          <a class="btn ghost" href="#dogs">Meet our dogs</a>
+        </div>
+      </div>
+      <div class="ph hero-photo" role="img" aria-label="An adult Airedale Terrier"><span>Photo coming soon</span></div>
+    </div>
+  </div>
+</div>
+<div class="facts">
+  <div class="wrap">
+    <ul>
+      <li>King of Terriers<small>The largest of the terrier breeds</small></li>
+      <li>DNA tested<small>Health testing for our dogs</small></li>
+      <li>Wiry coat<small>Low-shedding and hypoallergenic</small></li>
+      <li>Indoor and outdoor<small>At home on the sofa or the trail</small></li>
+    </ul>
+  </div>
+</div>
+<section id="breed">
+  <div class="wrap">
+    <p class="kicker">The breed</p>
+    <h2>Why an Airedale</h2>
+    <p class="intro">Airedale Terriers take their name from the Aire Valley in Yorkshire. They are smart, sturdy, and happiest when their family is close.</p>
+    <div class="cards">
+      <article class="card"><h3>A real family dog</h3><p>Airedales make great family dogs: loyal, playful, and glad to be wherever their people are.</p></article>
+      <article class="card"><h3>A coat that stays put</h3><p>The wiry coat sheds very little, and we raise our Airedales as a hypoallergenic breed. Every family's allergies differ, so meet the dogs before you decide.</p></article>
+      <article class="card"><h3>Made for Idaho</h3><p>Versatile indoor and outdoor dogs. They settle in on the couch and still have energy for the trail.</p></article>
+    </div>
+  </div>
+</section>
+<section id="dogs" style="padding-top:0">
+  <div class="wrap">
+    <p class="kicker">Our dogs</p>
+    <h2>Meet the family</h2>
+    <p class="intro">Adults and puppies from our kennel in Pocatello.</p>
+    <div class="gallery">
+      <div class="ph a" role="img" aria-label="Airedale"><span>Photo coming soon</span></div>
+      <div class="ph b" role="img" aria-label="Airedale puppy"><span>Photo coming soon</span></div>
+      <div class="ph c" role="img" aria-label="Airedale indoors"><span>Photo coming soon</span></div>
+      <div class="ph d" role="img" aria-label="Airedale puppy portrait"><span>Photo coming soon</span></div>
+      <div class="ph e" role="img" aria-label="Airedale puppy"><span>Photo coming soon</span></div>
+      <div class="ph f" role="img" aria-label="Airedale puppies"><span>Photo coming soon</span></div>
+    </div>
+  </div>
+</section>
+<section class="puppies" id="puppies">
+  <div class="wrap">
+    <p class="kicker">Puppies</p>
+    <h2>Join the puppy list</h2>
+    <p class="intro">Availability changes through the year. Email us to ask about upcoming litters.</p>
+    <div class="pup-grid">
+      <div class="status">
+        <h3>Current availability</h3>
+        <p>Contact us for the latest on puppies and upcoming litters.</p>
+        <a class="btn" href="#contact">Ask about puppies</a>
+      </div>
+      <ol class="steps">
+        <li><div><b>Reach out</b><span>Send us an email and tell us about your family and home.</span></div></li>
+        <li><div><b>Get on the list</b><span>We add you to the puppy list for upcoming litters.</span></div></li>
+        <li><div><b>Meet your match</b><span>We stay in touch as a litter gets closer.</span></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+<section id="story">
+  <div class="wrap story">
+    <div class="ph" role="img" aria-label="Gary and Lori Bennion"><span>Photo coming soon</span></div>
+    <div>
+      <p class="kicker">Our story</p>
+      <h2>Gary and Lori Bennion</h2>
+      <p class="big">We raise Airedale Terriers in Pocatello, Idaho, and place puppies with families across the Rocky Mountain area.</p>
+      <p>Our goal is simple: healthy, DNA-tested dogs that fit into a family. Follow our litters and updates on our Facebook page, rockymountainairedales.</p>
+      <a class="btn ghost" style="color:var(--spruce);border-color:var(--spruce)" href="https://www.facebook.com/profile.php?id=100066563756967">Visit us on Facebook</a>
+    </div>
+  </div>
+</section>
+<section class="contact" id="contact">
+  <div class="wrap contact-box">
+    <div>
+      <p class="kicker">Contact</p>
+      <h2>Tell us about your family</h2>
+      <p class="email-line"><a href="mailto:rockymountainairedales@gmail.com">rockymountainairedales@gmail.com</a></p>
+      <a class="btn" href="mailto:rockymountainairedales@gmail.com">Email us about a puppy</a>
+    </div>
+    <div class="contact-side">
+      <p><b>Rocky Mountain Airedales</b><br>Pocatello, Idaho</p>
+      <p>Gary and Lori Bennion</p>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <span>&copy; 2026 Rocky Mountain Airedales. Pocatello, Idaho.</span>
+    <span>rockymountainairedales.com</span>
+  </div>
+</footer>
+</body>
+</html>
